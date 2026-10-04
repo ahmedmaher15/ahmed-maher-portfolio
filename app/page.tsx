@@ -72,8 +72,16 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section className="techStrip"><div className="techTrack">{[...skills,...skills].map((skill,i)=><span className="techPill" key={`${skill.name}-${i}`}>{skill.icon ? <Image src={skill.icon} alt="" width={18} height={18}/> : <span className="miniDot"/>}{skill.name}</span>)}</div></section>
-
+      <section className="techStrip">
+        <div className="techTrack">
+          {[...skills, ...skills].map((skill, i) => (
+            <span className="techPill" key={`${skill.name}-${i}`}>
+              <span className="miniDot" />
+              {skill.name}
+            </span>
+          ))}
+        </div>
+      </section>
       <section id="about" className="section container">
         <Reveal><div className="sectionHead"><span>01 · ABOUT</span><h2>Engineering with product thinking.</h2></div></Reveal>
         <div className="aboutGrid">
