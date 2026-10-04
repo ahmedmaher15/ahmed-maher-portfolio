@@ -1,7 +1,7 @@
 export const skills = [
-  { name: "Flutter", icon: "/logos/flutter.svg" },
+  { name: "Flutter"},
   { name: "Dart" },
-  { name: "Firebase", icon: "/logos/firebase.svg" },
+  { name: "Firebase"},
   { name: "Bloc" },
   { name: "Cubit" },
   { name: "Provider" },
