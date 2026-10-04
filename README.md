@@ -1,40 +1,54 @@
-# Ahmed Maher Portfolio
+# Ahmed Maher — Portfolio
 
-Modern Next.js portfolio for Ahmed Maher — Senior Flutter Developer.
+Modern personal portfolio website for **Ahmed Maher**, Senior Flutter Developer with 4+ years of experience building scalable, production-ready mobile applications for iOS and Android.
 
-## Run locally
+## About
+
+This portfolio highlights my experience, technical stack, selected projects, and professional background as a Flutter developer.
+
+The website is built with a focus on:
+
+- Modern responsive design
+- Smooth animations
+- Clean UI
+- Mobile-first experience
+- Performance
+- Maintainable code structure
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Framer Motion
+- Lucide Icons
+- CSS
+- Vercel
+
+## Featured Experience
+
+- Senior Flutter Developer — MIST Labs
+- Senior Flutter Developer — Takka
+- Flutter Developer — Const-Tech
+
+## Selected Projects
+
+The portfolio includes several production mobile applications, including:
+
+- Takka
+- Takka Delivery
+- Takka Restaurant
+- Truck World
+- Carsy
+- OneShot
+- TeamWork Arabic Freelancers
+- Top1Market
+- Bnaa
+- معاوضة
+
+## Run Locally
+
+Clone the repository:
 
 ```bash
-npm install
-npm run dev
-```
-
-Open: http://localhost:3000
-
-## Push to GitHub
-
-Repository:
-`https://github.com/ahmedmaher15/ahmed-maher-portfolio.git`
-
-From inside the project folder:
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin https://github.com/ahmedmaher15/ahmed-maher-portfolio.git
-git push -u origin main
-```
-
-## Deploy on Vercel
-
-1. Sign in to Vercel with GitHub.
-2. Click **Add New > Project**.
-3. Import `ahmed-maher-portfolio`.
-4. Keep the default Next.js settings.
-5. Click **Deploy**.
-
-## Next update
-
-The Projects section is intentionally prepared for the next step: adding app logos, screenshots, Google Play links and App Store links.
+git clone https://github.com/ahmedmaher15/ahmed-maher-portfolio.git
