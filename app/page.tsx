@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Menu, X } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
 import Reveal from "@/components/Reveal";
@@ -11,11 +11,10 @@ import { experience, projects, skills } from "@/data/portfolio";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
-  const progress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
     <main className="siteShell">
-      <motion.div className="scrollProgress" style={{ scaleX: progress }} />
+      <motion.div className="scrollProgress" style={{ scaleX: scrollYProgress }} />
 
       <header className="navWrap">
         <nav className="nav container">
@@ -30,13 +29,13 @@ export default function Home() {
           </div>
           <div className="navActions">
             <ThemeToggle />
-            <button className="menuButton" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+            <button className="menuButton" type="button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? "Close menu" : "Open menu"}>
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </nav>
         {menuOpen && (
-          <motion.div className="mobileMenu container" initial={{opacity:0,y:-8}} animate={{opacity:1,y:0}}>
+          <motion.div id="mobile-navigation" className="mobileMenu container" initial={{opacity:0,y:-8}} animate={{opacity:1,y:0}}>
             <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
             <a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
             <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
@@ -63,7 +62,7 @@ export default function Home() {
 
         <motion.div className="profileCard" initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} transition={{duration:.8,delay:.08}}>
           <div className="profileTop"><span>Flutter Developer</span><span>Cairo, Egypt</span></div>
-          <div className="profilePhoto"><Image src="/profile/ahmed.png" alt="Ahmed Maher" width={700} height={900} priority className="portraitImage"/></div>
+          <div className="profilePhoto"><Image src="/profile/ahmed.png" alt="Ahmed Maher" width={700} height={900} sizes="(max-width: 920px) 100vw, 430px" priority className="portraitImage"/></div>
           <div className="statsRow">
             <div><strong>4+</strong><span>Years</span></div>
             <div><strong>{projects.length}+</strong><span>Projects</span></div>

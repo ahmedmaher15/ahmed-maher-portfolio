@@ -8,20 +8,26 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
-    const shouldUseDark = saved ? saved === "dark" : true;
-    setDark(shouldUseDark);
-    document.documentElement.dataset.theme = shouldUseDark ? "dark" : "light";
+    const isDark = saved !== "light";
+    setDark(isDark);
+    document.documentElement.dataset.theme = isDark ? "dark" : "light";
   }, []);
 
-  const toggleTheme = () => {
+  function toggleTheme() {
     const next = !dark;
     setDark(next);
     document.documentElement.dataset.theme = next ? "dark" : "light";
     localStorage.setItem("theme", next ? "dark" : "light");
-  };
+  }
 
   return (
-    <button className="iconButton" onClick={toggleTheme} aria-label="Toggle theme">
+    <button
+      type="button"
+      className="iconButton"
+      onClick={toggleTheme}
+      aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+      title={dark ? "Light mode" : "Dark mode"}
+    >
       {dark ? <Sun size={18} /> : <Moon size={18} />}
     </button>
   );
