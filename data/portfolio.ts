@@ -61,6 +61,8 @@ export const experience = [
 export const projects = [
   {
     name: "Takka",
+    appStore: "https://apps.apple.com/eg/app/takka/id6502396946",
+    googlePlay: null,
     category: "Food Delivery Platform",
     description:
       "Customer-facing food delivery application with real-time order tracking and complete ordering flows.",
@@ -70,6 +72,8 @@ export const projects = [
 
   {
     name: "Takka Delivery",
+    appStore: "https://apps.apple.com/eg/app/takka-delivery/id6743051281",
+    googlePlay: null,
     category: "Driver Application",
     description:
       "Delivery operations app focused on routing, driver workflows and live order execution.",
@@ -79,6 +83,8 @@ export const projects = [
 
   {
     name: "Takka Restaurant",
+    appStore: "https://apps.apple.com/eg/app/takka-restaurant/id6743033072",
+    googlePlay: null,
     category: "Restaurant Management",
     description:
       "Restaurant application for managing incoming orders, preparation and delivery workflows.",
@@ -87,16 +93,28 @@ export const projects = [
   },
 
   {
-    name: "Truck World",
-    category: "Logistics Ecosystem",
-    description:
-      "Multi-application logistics system for managers, employees and drivers with trip scheduling and tracking.",
+    name: "Truck World Manager",
+    category: "Logistics Management",
+    description: "Manage employees, schedule trips, assign drivers and monitor transportation operations.",
     image: "/projects/truck-world.png",
-    tags: ["Flutter", "Logistics", "Tracking", "Architecture"],
+    tags: ["Flutter", "Logistics", "Management", "Scheduling"],
+    appStore: "https://apps.apple.com/eg/app/truck-world-manger/id6756839810",
+    googlePlay: null,
+  },
+  {
+    name: "Truck World Employee",
+    category: "Employee Logistics App",
+    description: "Manage assigned trips, track delivery workflows and coordinate daily logistics tasks.",
+    image: "/projects/truck-world.png",
+    tags: ["Flutter", "Logistics", "Trips", "Delivery"],
+    appStore: "https://apps.apple.com/eg/app/truck-world-employee/id6757125886",
+    googlePlay: null,
   },
 
   {
     name: "Carsy",
+    appStore: "https://apps.apple.com/eg/app/carsy/id6745311313",
+    googlePlay: null,
     category: "Automotive Marketplace",
     description:
       "Car marketplace application with advanced vehicle listing and marketplace workflows.",
@@ -106,6 +124,8 @@ export const projects = [
 
   {
     name: "OneShot",
+    appStore: "https://apps.apple.com/eg/app/oneshot/id6753289422",
+    googlePlay: null,
     category: "Sports Platform",
     description:
       "Sports competition and rewards application with interactive mobile experiences.",
@@ -115,6 +135,8 @@ export const projects = [
 
 {
   name: "TeamWork Arabic Freelancers",
+    appStore: "https://apps.apple.com/eg/app/teamwork-arabic-freelancers/id6753018150",
+    googlePlay: null,
   category: "Freelancing Platform",
   description:
     "Freelancer marketplace platform with scalable UI improvements and mobile workflows.",
@@ -124,6 +146,8 @@ export const projects = [
 
 {
   name: "Top1Market",
+    appStore: "https://apps.apple.com/eg/app/top1market/id6759213811",
+    googlePlay: null,
   category: "Marketplace",
   description:
     "Marketplace application for services and products.",
@@ -133,6 +157,8 @@ export const projects = [
 
 {
   name: "Bnaa",
+    appStore: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.moltaqa.benaa&hl=ar",
   category: "Services Platform",
   description:
     "Two-sided services platform connecting users with service providers.",
@@ -141,10 +167,39 @@ export const projects = [
 },
 {
   name: "معاوضة",
+  appStore: null,
+  googlePlay: null,
   category: "Services Platform",
   description:
     "Online market for used or new products",
   image: "/projects/moawda.png",
   tags: ["Flutter", "Services", "Mobile App"],
 },
+  {
+    name: "Keep IC – Customer App",
+    category: "Home & Automotive Services",
+    description: "Book home services, appliance maintenance and car maintenance services.",
+    image: "/projects/keep-ic-customer.svg",
+    tags: ["Flutter", "Booking", "Services", "Customer App"],
+    appStore: "https://apps.apple.com/eg/app/keep-ic-app/id6749622873",
+    googlePlay: null,
+  },
+  {
+    name: "Keep IC – Provider App",
+    category: "Service Provider Management",
+    description: "Manage service providers, customer requests and incoming service jobs.",
+    image: "/projects/keep-ic-provider.svg",
+    tags: ["Flutter", "Provider App", "Requests", "Services"],
+    appStore: "https://apps.apple.com/eg/app/keep-ic-app-provider/id6752035885",
+    googlePlay: null,
+  },
+  {
+    name: "Keep IC – Serviceman App",
+    category: "Technician Operations",
+    description: "Receive, manage and complete assigned maintenance and service requests.",
+    image: "/projects/keep-ic-serviceman.svg",
+    tags: ["Flutter", "Technicians", "Jobs", "Workflows"],
+    appStore: "https://apps.apple.com/eg/app/keep-ic-app-serviceman/id6752035925",
+    googlePlay: null,
+  },
 ];

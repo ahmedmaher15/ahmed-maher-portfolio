@@ -98,7 +98,50 @@ export default function Home() {
 
       <section id="projects" className="section container">
         <Reveal><div className="sectionHead"><span>03 · PROJECTS</span><h2>Products that shipped.</h2></div></Reveal>
-        <div className="projectsGrid">{projects.map((project,index)=><Reveal key={project.name} delay={(index%2)*.04}><article className="projectCard"><div className="projectVisual"><div className="projectGlow"/><Image src={project.image} alt={`${project.name} logo`} width={260} height={260} className="projectLogo"/><span className="projectNumber">{String(index+1).padStart(2,'0')}</span></div><div className="projectBody"><div className="projectMeta"><span>{project.category}</span><ArrowUpRight size={17}/></div><h3>{project.name}</h3><p>{project.description}</p><div className="tags">{project.tags.map(tag=><span key={tag}>{tag}</span>)}</div></div></article></Reveal>)}</div>
+        <div className="projectsGrid">
+          {projects.map((project, index) => (
+            <Reveal key={project.name} delay={(index % 2) * 0.04}>
+              <article className="projectCard">
+                <div className="projectVisual">
+                  <div className="projectGlow" />
+                  <Image
+                    src={project.image}
+                    alt={`${project.name} logo`}
+                    width={260}
+                    height={260}
+                    className="projectLogo"
+                  />
+                  <span className="projectNumber">{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <div className="projectBody">
+                  <div className="projectMeta">
+                    <span>{project.category}</span>
+                    <ArrowUpRight size={17} />
+                  </div>
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                  <div className="tags">
+                    {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                  </div>
+                  {(project.appStore || project.googlePlay) && (
+                    <div className="storeLinks">
+                      {project.appStore && (
+                        <a className="storeLink" href={project.appStore} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} on the App Store`}>
+                          <span className="storeIcon">●</span> App Store <ArrowUpRight size={14} />
+                        </a>
+                      )}
+                      {project.googlePlay && (
+                        <a className="storeLink" href={project.googlePlay} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} on Google Play`}>
+                          <span className="storeIcon">▶</span> Google Play <ArrowUpRight size={14} />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="section container"><Reveal><div className="educationCard"><div><span>04 · EDUCATION</span></div><div><h2>Bachelor of Computer Science</h2><p>Cairo Higher Institute, Egypt · 2017 — 2021</p></div></div></Reveal></section>
