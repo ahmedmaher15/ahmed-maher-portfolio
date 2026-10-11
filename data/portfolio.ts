@@ -66,7 +66,7 @@ export const projects = [
   {
     name: "Takka",
     appStore: "https://apps.apple.com/eg/app/takka/id6502396946",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.mah852.takha&hl=ar",
     category: "Food Delivery Platform",
     description:
       "Customer-facing food delivery application with real-time order tracking and complete ordering flows.",
@@ -77,7 +77,7 @@ export const projects = [
   {
     name: "Takka Delivery",
     appStore: "https://apps.apple.com/eg/app/takka-delivery/id6743051281",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.mah852.takhdelivery&hl=ar",
     category: "Driver Application",
     description:
       "Delivery operations app focused on routing, driver workflows and live order execution.",
@@ -88,7 +88,7 @@ export const projects = [
   {
     name: "Takka Restaurant",
     appStore: "https://apps.apple.com/eg/app/takka-restaurant/id6743033072",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.mah852.takahrestaurant&hl=ar",
     category: "Restaurant Management",
     description:
       "Restaurant application for managing incoming orders, preparation and delivery workflows.",
@@ -103,7 +103,7 @@ export const projects = [
     image: "/projects/truck-world.png",
     tags: ["Flutter", "Logistics", "Management", "Scheduling"],
     appStore: "https://apps.apple.com/eg/app/truck-world-manger/id6756839810",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.ao307.truckworldadmin&hl=ar",
   },
   {
     name: "Truck World Employee",
@@ -112,13 +112,13 @@ export const projects = [
     image: "/projects/truck-world.png",
     tags: ["Flutter", "Logistics", "Trips", "Delivery"],
     appStore: "https://apps.apple.com/eg/app/truck-world-employee/id6757125886",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.ao307.eltyp.emlpoyee&hl=ar",
   },
 
   {
     name: "Carsy",
     appStore: "https://apps.apple.com/eg/app/carsy/id6745311313",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.mah852.Carsy&hl=ar",
     category: "Automotive Marketplace",
     description:
       "Car marketplace application with advanced vehicle listing and marketplace workflows.",
@@ -129,7 +129,7 @@ export const projects = [
   {
     name: "OneShot",
     appStore: "https://apps.apple.com/eg/app/oneshot/id6753289422",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.ao307.oneshot&hl=ar",
     category: "Sports Platform",
     description:
       "Sports competition and rewards application with interactive mobile experiences.",
@@ -140,7 +140,7 @@ export const projects = [
 {
   name: "TeamWork Arabic Freelancers",
     appStore: "https://apps.apple.com/eg/app/teamwork-arabic-freelancers/id6753018150",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.solv.teamwork&hl=ar",
   category: "Freelancing Platform",
   description:
     "Freelancer marketplace platform with scalable UI improvements and mobile workflows.",
@@ -171,8 +171,8 @@ export const projects = [
 },
 {
   name: "معاوضة",
-  appStore: null,
-  googlePlay: null,
+  appStore: "https://apps.apple.com/eg/app/%D9%85%D8%B9%D8%A7%D9%88%D8%B6%D8%A9/id6805496788?l=ar",
+  googlePlay: "https://play.google.com/store/apps/details?id=com.elryad.elmoawda&hl=ar",
   category: "Services Platform",
   description:
     "Online market for used or new products",
@@ -186,7 +186,7 @@ export const projects = [
     image: "/projects/keep-ic-customer.png",
     tags: ["Flutter", "Booking", "Services", "Customer App"],
     appStore: "https://apps.apple.com/eg/app/keep-ic-app/id6749622873",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.khetelehteraf.kicapp.user&hl=ar",
   },
   {
     name: "Keep IC – Provider App",
@@ -195,7 +195,7 @@ export const projects = [
     image: "/projects/keep-ic-provider.png",
     tags: ["Flutter", "Provider App", "Requests", "Services"],
     appStore: "https://apps.apple.com/eg/app/keep-ic-app-provider/id6752035885",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.khetelehteraf.kicapps.provider&hl=ar",
   },
   {
     name: "Keep IC – Serviceman App",
@@ -204,6 +204,6 @@ export const projects = [
     image: "/projects/keep-ic-serviceman.png",
     tags: ["Flutter", "Technicians", "Jobs", "Workflows"],
     appStore: "https://apps.apple.com/eg/app/keep-ic-app-serviceman/id6752035925",
-    googlePlay: null,
+    googlePlay: "https://play.google.com/store/apps/details?id=com.khetelehteraf.kicapps.serviceman&hl=ar",
   },
 ];
