@@ -71,3 +71,46 @@ html[data-theme="light"] .button.secondary { background: rgba(17,19,24,.035); }
 @media (prefers-reduced-motion: reduce) {
   .techTrack { animation: none; }
 }
+
+
+/* Friendly portfolio v2 – roomy, readable, easy to browse */
+.aboutMain { justify-content: flex-start; min-height: 0; padding: 34px; }
+.aboutIntro { width: 100%; align-self: flex-start; }
+.smallEyebrow { display: inline-block; margin-bottom: 13px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .11em; color: var(--accent2); }
+.aboutIntro h3 { margin: 0 0 16px; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.18; letter-spacing: -.035em; }
+.aboutIntro p { font-size: 15px; line-height: 1.75; }
+.aboutIntro p strong { color: var(--text); }
+.aboutHighlights { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 23px; }
+.aboutHighlights span { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface2); color: var(--muted); font-size: 11px; font-weight: 650; }
+.aboutHighlights svg { color: var(--green); }
+.sectionLead { margin: -20px 0 26px 202px; color: var(--muted); line-height: 1.65; max-width: 620px; font-size: 14px; }
+.projectToolbar { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 24px; }
+.filterButtons { display: flex; flex-wrap: wrap; gap: 8px; }
+.filterButton { padding: 10px 15px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; transition: background .2s, border-color .2s, color .2s; }
+.filterButton:hover { border-color: var(--accent); color: var(--text); }
+.filterButton.active { background: var(--accent); border-color: var(--accent); color: white; }
+.projectCount { color: var(--muted2); font-size: 12px; white-space: nowrap; }
+.moreProjects { display: flex; justify-content: center; margin-top: 28px; }
+.moreProjects .button { cursor: pointer; min-width: 220px; color: var(--text); }
+.skillCloud { display: flex; flex-wrap: wrap; gap: 11px; margin-left: 202px; }
+.skillChip { padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; color: var(--text); font-size: 13px; font-weight: 600; }
+.educationSection { padding-top: 0; }
+.educationExtras { font-size: 12px; }
+.navLinks { gap: 23px; }
+@media (max-width: 920px) { .sectionLead, .skillCloud { margin-left: 0; } }
+@media (max-width: 760px) {
+  .aboutMain { padding: 24px; }
+  .aboutIntro p { font-size: 14px; }
+  .projectToolbar { flex-direction: column; align-items: flex-start; }
+  .filterButtons { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding: 2px 1px 10px; scrollbar-width: thin; }
+  .filterButton { white-space: nowrap; flex-shrink: 0; }
+  .sectionLead { margin: -12px 0 20px; }
+  .skillCloud { gap: 8px; }
+  .skillChip { padding: 10px 12px; font-size: 12px; }
+}
+@media (max-width: 480px) {
+  .aboutMain { padding: 21px; }
+  .aboutHighlights { gap: 7px; }
+  .aboutHighlights span { font-size: 10px; }
+  .projectCount { font-size: 11px; }
+}
